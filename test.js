@@ -39,8 +39,8 @@ const capabilities1 = {
         console: true,
         video: true,
         tunnel: false,
-        name: 'Test Demo 2210HRLastCommit', // name of the test
-        build: 'NodeJS GitHub Actions Build 29-04-2021' // name of the build
+        name: '[1]: Azure JavaScript Demo on LambdaTest', // name of the test
+        build: '[1]: Azure JavaScript Demo on LambdaTest' // name of the build
 }
 
 const capabilities2 = {
@@ -53,8 +53,8 @@ const capabilities2 = {
         console: true,
         video: true,
         tunnel: false,
-        name: 'Test Demo 2210HRLastCommit', // name of the test
-        build: 'NodeJS GitHub Actions Build 29-04-2021' // name of the build
+        name: '[2]: Azure JavaScript Demo on LambdaTest', // name of the test
+        build: '[2]: Azure JavaScript Demo on LambdaTest' // name of the build
 }
 
 const capabilities3 = {
@@ -67,8 +67,8 @@ const capabilities3 = {
         console: true,
         video: true,
         tunnel: false,
-        name: 'Test Demo 2210HRLastCommit', // name of the test
-        build: 'NodeJS GitHub Actions Build 29-04-2021' // name of the build
+        name: '[3]: Azure JavaScript Demo on LambdaTest', // name of the test
+        build: '[3]: Azure JavaScript Demo on LambdaTest' // name of the build
 }
 
 const capabilities4 = {
@@ -81,8 +81,8 @@ const capabilities4 = {
         console: true,
         video: true,
         tunnel: false,
-        name: 'Test Demo 2210HRLastCommit', // name of the test
-        build: 'NodeJS GitHub Actions Build 29-04-2021' // name of the build
+        name: '[4]: Azure JavaScript Demo on LambdaTest', // name of the test
+        build: '[4]: Azure JavaScript Demo on LambdaTest' // name of the build
 }
  
 // URL: https://{username}:{accessKey}@hub.lambdatest.com/wd/hub
