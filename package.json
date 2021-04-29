@@ -1,0 +1,25 @@
+{
+  
+
+ "scripts": {
+  
+ "server": "http-server -p 8888 ./ > /dev/null 2>&1 &",
+
+ "unit": "node test.js",
+
+ "test": "npm run unit"
+  
+
+ },
+  
+
+ "dependencies": {
+  
+
+ "http-server": "^0.12.3",
+  
+ "selenium-webdriver": "*"
+  
+
+ }
+}
