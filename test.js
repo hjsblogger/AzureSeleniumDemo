@@ -41,8 +41,8 @@ function searchTextOnGoogle() {
         console: true,
         video: true,
         //tunnel: true,
-        name: 'Test Demo 0335HRLastCommit', // name of the test
-        build: 'NodeJS GitHub Actions Build 29-04-2021' // name of the build
+        name: 'Azure JavaScript Demo on LambdaTest', // name of the test
+        build: 'Azure JavaScript Demo on LambdaTest' // name of the build
     }
  
     // URL: https://{username}:{accessKey}@hub.lambdatest.com/wd/hub
@@ -56,8 +56,7 @@ function searchTextOnGoogle() {
  
     // navigate to a url, search for a text and get title of page
     driver.get('https://lambdatest.github.io/sample-todo-app/').then(function() {
-    //driver.get('https://muditlambda.github.io/todo_list_demo/').then(function() {
-        driver.getTitle().then(function(title) {
+            driver.getTitle().then(function(title) {
             setTimeout(function() {
                 console.log(title);
                 assert.strictEqual(title, "Sample page - lambdatest.com");
