@@ -21,10 +21,10 @@ var assert = require('assert');
 */
  
 // username: Username can be found at automation dashboard
-const USERNAME = process.env.LT_USERNAME;
+const USERNAME = 'mudits';
  
 // AccessKey:  AccessKey can be generated from automation dashboard or profile section
-const KEY = process.env.LT_KEY;
+const KEY = 'JdkSYoBcmZJ8xPHNCjL9CdBhYzcshYGXmgphdCjspipMlpkrJo';
  
 // gridUrl: gridUrl can be found at automation dashboard
 const GRID_HOST = 'hub.lambdatest.com/wd/hub';
@@ -40,7 +40,7 @@ function searchTextOnGoogle() {
         visual: true,
         console: true,
         video: true,
-        tunnel: true,
+        //tunnel: true,
         name: 'Test Demo 0335HRLastCommit', // name of the test
         build: 'NodeJS GitHub Actions Build 29-04-2021' // name of the build
     }
@@ -55,7 +55,7 @@ function searchTextOnGoogle() {
         .build();
  
     // navigate to a url, search for a text and get title of page
-    driver.get('http://localhost:8888').then(function() {
+    driver.get('https://muditlambda.github.io/todo_list_demo/').then(function() {
         driver.getTitle().then(function(title) {
             setTimeout(function() {
                 console.log(title);
