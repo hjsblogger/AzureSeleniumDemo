@@ -38,7 +38,7 @@ const capabilities1 = {
         visual: true,
         console: true,
         video: true,
-        tunnel: true,
+        tunnel: false,
         name: 'Test Demo 2210HRLastCommit', // name of the test
         build: 'NodeJS GitHub Actions Build 29-04-2021' // name of the build
 }
@@ -52,7 +52,7 @@ const capabilities2 = {
         visual: true,
         console: true,
         video: true,
-        tunnel: true,
+        tunnel: false,
         name: 'Test Demo 2210HRLastCommit', // name of the test
         build: 'NodeJS GitHub Actions Build 29-04-2021' // name of the build
 }
@@ -66,7 +66,7 @@ const capabilities3 = {
         visual: true,
         console: true,
         video: true,
-        tunnel: true,
+        tunnel: false,
         name: 'Test Demo 2210HRLastCommit', // name of the test
         build: 'NodeJS GitHub Actions Build 29-04-2021' // name of the build
 }
@@ -80,7 +80,7 @@ const capabilities4 = {
         visual: true,
         console: true,
         video: true,
-        tunnel: true,
+        tunnel: false,
         name: 'Test Demo 2210HRLastCommit', // name of the test
         build: 'NodeJS GitHub Actions Build 29-04-2021' // name of the build
 }
