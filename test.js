@@ -55,7 +55,8 @@ function searchTextOnGoogle() {
         .build();
  
     // navigate to a url, search for a text and get title of page
-    driver.get('https://muditlambda.github.io/todo_list_demo/').then(function() {
+    driver.get('https://lambdatest.github.io/sample-todo-app/').then(function() {
+    //driver.get('https://muditlambda.github.io/todo_list_demo/').then(function() {
         driver.getTitle().then(function(title) {
             setTimeout(function() {
                 console.log(title);
