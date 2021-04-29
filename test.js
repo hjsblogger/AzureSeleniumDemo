@@ -21,10 +21,10 @@ var assert = require('assert');
 */
  
 // username: Username can be found at automation dashboard
-const USERNAME = 'mudits';
+const USERNAME = 'himanshu.sheth';
  
 // AccessKey:  AccessKey can be generated from automation dashboard or profile section
-const KEY = 'JdkSYoBcmZJ8xPHNCjL9CdBhYzcshYGXmgphdCjspipMlpkrJo';
+const KEY = 'fbI6kxucn5iRzwt5GWYiNvaPb4Olu9R8lwBsXWTSaIOebXn4x9';
  
 // gridUrl: gridUrl can be found at automation dashboard
 const GRID_HOST = 'hub.lambdatest.com/wd/hub';
