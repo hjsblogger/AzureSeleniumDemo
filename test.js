@@ -28,11 +28,37 @@ const KEY = 'fbI6kxucn5iRzwt5GWYiNvaPb4Olu9R8lwBsXWTSaIOebXn4x9';
  
 // gridUrl: gridUrl can be found at automation dashboard
 const GRID_HOST = 'hub.lambdatest.com/wd/hub';
- 
-function searchTextOnGoogle() {
-    // Setup Input capabilities
-    const capabilities = {
+
+const capabilities1 = {
         platform: 'windows 10',
+        browserName: 'chrome',
+        version: 'latest',
+        resolution: '1280x800',
+        network: true,
+        visual: true,
+        console: true,
+        video: true,
+        tunnel: true,
+        name: 'Test Demo 2210HRLastCommit', // name of the test
+        build: 'NodeJS GitHub Actions Build 29-04-2021' // name of the build
+}
+
+const capabilities2 = {
+        platform: 'windows 8.1',
+        browserName: 'chrome',
+        version: 'latest',
+        resolution: '1280x800',
+        network: true,
+        visual: true,
+        console: true,
+        video: true,
+        tunnel: true,
+        name: 'Test Demo 2210HRLastCommit', // name of the test
+        build: 'NodeJS GitHub Actions Build 29-04-2021' // name of the build
+}
+
+const capabilities3 = {
+        platform: 'windows 8',
         browserName: 'chrome',
         version: '87.0',
         resolution: '1280x800',
@@ -40,13 +66,31 @@ function searchTextOnGoogle() {
         visual: true,
         console: true,
         video: true,
-        //tunnel: true,
-        name: 'Azure JavaScript Demo on LambdaTest', // name of the test
-        build: 'Azure JavaScript Demo on LambdaTest' // name of the build
-    }
+        tunnel: true,
+        name: 'Test Demo 2210HRLastCommit', // name of the test
+        build: 'NodeJS GitHub Actions Build 29-04-2021' // name of the build
+}
+
+const capabilities4 = {
+        platform: 'windows 10',
+        browserName: 'chrome',
+        version: 'latest-1',
+        resolution: '1280x800',
+        network: true,
+        visual: true,
+        console: true,
+        video: true,
+        tunnel: true,
+        name: 'Test Demo 2210HRLastCommit', // name of the test
+        build: 'NodeJS GitHub Actions Build 29-04-2021' // name of the build
+}
  
-    // URL: https://{username}:{accessKey}@hub.lambdatest.com/wd/hub
-    const gridUrl = 'https://' + USERNAME + ':' + KEY + '@' + GRID_HOST;
+// URL: https://{username}:{accessKey}@hub.lambdatest.com/wd/hub
+const gridUrl = 'https://' + USERNAME + ':' + KEY + '@' + GRID_HOST;
+ 
+function runTestOnLambdaTest(capabilities) {
+    // Setup Input capabilities
+
  
     // setup and build selenium driver object
     const driver = new webdriver.Builder()
@@ -55,14 +99,14 @@ function searchTextOnGoogle() {
         .build();
  
     // navigate to a url, search for a text and get title of page
-    driver.get('https://lambdatest.github.io/sample-todo-app/').then(function() {
-            driver.getTitle().then(function(title) {
+    driver.get('http://localhost:8888').then(function() {
+        driver.getTitle().then(function(title) {
             setTimeout(function() {
                 console.log(title);
                 assert.strictEqual(title, "Sample page - lambdatest.com");
                 driver.executeScript('lambda-status=passed');
                 driver.quit();
-            }, 5000);
+            }, 500);
         });
         
     }).catch(function(error){
@@ -71,4 +115,7 @@ function searchTextOnGoogle() {
         driver.quit();
     });
 }
-searchTextOnGoogle();
+runTestOnLambdaTest(capabilities1);
+runTestOnLambdaTest(capabilities2);
+runTestOnLambdaTest(capabilities3);
+runTestOnLambdaTest(capabilities4);
